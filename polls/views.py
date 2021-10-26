@@ -1,10 +1,10 @@
-from django.http.response import HttpResponseRedirect
-from .models import Question, Choice
-from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponse, Http404
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from .models import Question, Choice
+from django.http import HttpResponse, Http404
+from django.http.response import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
 
 from polls import models
 # Create your views here.
